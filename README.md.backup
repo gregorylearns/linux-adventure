@@ -25,42 +25,42 @@ The snap package won't open files from NTFS partitions. I followed the snap medi
 Download link:
 https://www.wps.com/en-PH/download/
 
-##LibreOffice Addons
+## LibreOffice Addons
 
 notebookbar and office 2013 icons.
 
-##Fixing slow copying speeds
+## Fixing slow copying speeds
 
 I read somewhere that PCManFM didn't have this problem vs. Thunar that XFCE is installed with. I found out that I liked PCManFM, but the problem still persisted. This fixed the problem.
 
 https://gist.github.com/2E0PGS/f63544f8abe69acc5caaa54f56efe52f
 
-##Photoshop CS6
+## Photoshop CS6
 
 Install the portable version through wine. Works surprisingly well.
 
 
-##ANGRYSearch
+## ANGRYSearch
 
 A python based, Everything(Win only) alternative. It works okay, but not as great as Everything. Man I wish Everything had a port.
 SublimeText
 
 
-##XFCE Tiling
+## XFCE Tiling
 
 *image*
 
 
-##Linux MTP File Transfer
+## Linux MTP File Transfer
 Not as seamless as it is in windows. I hate that it just doesnt work out of the box. I learned how to use ES File explorer FTP how to manage files. Now this (ES File Explorer) is nifty.
 
 
-##Redshift GTK
+## Redshift GTK
 
 I tried f.lux to work, but it doesn't. Redshift is very good and highly recommend.
 
 
-##Wifi speed fix
+## Wifi speed fix
 Because im still dual booting my windows, I noticed that the wifi speed on my ubuntu was slower than the wifi speed on my windows. I found a fix online and applied it.
 
 https://ubuntuforums.org/showthread.php?t=2364068
