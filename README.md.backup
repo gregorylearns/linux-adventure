@@ -1,7 +1,10 @@
 # Linux-adventure
 
-After getting approved for my undergrad thesis, I went and used Xubuntu 18.04 full time. Making it my daily driver. Along the way I went and did customizations, fixes, and overall enhancement to the OS that probably no clean install could be like this.
-Im making this retroactively seeing what improvements im making so that I can also replicate it if i ever decide to migrate to another distro or upgrade.
+After getting approved for my undergrad thesis, I went and used Xubuntu 18.04 full time; making it my daily driver. 
+
+Along the way I went and did customizations, fixes, and overall enhancement to the OS that probably no clean install could be like this.
+
+Im making this retroactively seeing what improvements im making so that I can also replicate it if i ever decide to migrate to another distro or upgrade.(Im thinking of moving to linux mint cinnamon)
 
 ## Termdown
 
@@ -68,3 +71,28 @@ https://ubuntuforums.org/showthread.php?t=2364068
 https://askubuntu.com/questions/830868/wifi-on-ubuntu-works-slower-than-wifi-on-windows-for-my-laptop
 
 https://askubuntu.com/questions/939050/dual-booting-ubuntu-windows-10-wifi-on-ubuntu-is-extremely-slow
+
+## Flameshot
+
+Missed snipping tool on windows, found this amazing alternative. I also have it on my keyboard shortcut as PrtSc - flameshot gui -p "path/to/dir"
+
+## Keyboard Shortcuts
+
+Super + D - Show Desktop
+
+Super + G - Telegram Desktop
+
+Super + F - File Manager
+
+Super + H - Discord
+
+Super + T - Terminal
+
+Super + W - Firefox
+
+Super + Z - Whisker Menu
+
+PrtSc - Flameshot 
+
+Alt + K,J,L,M,',','.',U,I,O - Tile Windows
+
