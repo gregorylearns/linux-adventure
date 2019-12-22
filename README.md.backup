@@ -48,7 +48,7 @@ SublimeText
 
 ## XFCE Tiling
 
-*image*
+![From this reddit thread of tiling.](https://raw.githubusercontent.com/gregorylearns/linux-adventure/master/images/xfce_tile.PNG)
 
 
 ## Linux MTP File Transfer
