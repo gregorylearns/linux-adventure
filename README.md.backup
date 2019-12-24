@@ -96,3 +96,16 @@ PrtSc - Flameshot
 
 Alt + K,J,L,M,',','.',U,I,O - Tile Windows
 
+
+## APT-SMART
+
+```
+pip3 install apt-smart
+```
+From this askubuntu thread: https://askubuntu.com/questions/39922/how-do-you-select-the-fastest-mirror-from-the-command-line
+
+Christmas Eve i'm having problem with updating a package using apt. Found out that PH Servers were 6 hours and a day behind respectively.
+
+## Ghostwriter
+
+Was looking for a writing package to write something distraction free. Turns out finding it was a distraction for myself to procrastinate in doing the thing I didnt want to do.
