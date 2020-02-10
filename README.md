@@ -6,13 +6,24 @@ Along the way I went and did customizations, fixes, and overall enhancement to t
 
 Im making this retroactively seeing what improvements im making so that I can also replicate it if i ever decide to migrate to another distro or upgrade.(Im thinking of moving to linux mint cinnamon)
 
+UPDATE: Im thinking of moving to KDE or MATE during the 20.04 Release or when I get a new replacement SSD for my laptop.
+
+## TLP
+
+I read somewhere in a thread where TLP is supposed to saves battery in linux.
+
+[Project Page](https://linrunner.de/en/tlp/tlp.html)
+[Github Page](https://github.com/linrunner/TLP)
+
+
+
 ## Termdown
 
 is a python library for a CLI countdown timer. Very useful for timers.
 Install using
 
 ````
-$ pip3 install termdown
+$ sudo pip3 install termdown
 ````
 
 ## pyhostsman
@@ -30,7 +41,9 @@ https://www.wps.com/en-PH/download/
 
 ## LibreOffice Addons
 
-notebookbar and office 2013 icons.
+Although this looked like the familiar MS Office Ribbon UI, it still didn't do for me since most of my work revolves around getting MS Documents from my friends.
+![Libreoffice wiht Notebookbar and Office2013 addons installed](/images/libreoffice-notebookbar-office2013icons.png)
+
 
 ## Fixing slow copying speeds
 
@@ -46,12 +59,16 @@ Install the portable version through wine. Works surprisingly well.
 ## ANGRYSearch
 
 A python based, Everything(Win only) alternative. It works okay, but not as great as Everything. Man I wish Everything had a port.
-SublimeText
 
+## SublimeText
+
+Download Sublime through here: https://www.sublimetext.com/docs/3/linux_repositories.html
 
 ## XFCE Tiling
 
 ![From this reddit thread of tiling.](https://raw.githubusercontent.com/gregorylearns/linux-adventure/master/images/xfce_tile.PNG)
+
+Sorry I didn't upvote huhu.
 
 
 ## Linux MTP File Transfer
