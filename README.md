@@ -126,3 +126,14 @@ Christmas Eve i'm having problem with updating a package using apt. Found out th
 ## Ghostwriter
 
 Was looking for a writing package to write something distraction free. Turns out finding it was a distraction for myself to procrastinate in doing the thing I didnt want to do.
+
+
+## Mousescrolling fix
+
+I was frustrated with the inability to fine tune mouse scrolling and I found a solution with a gui using zenity. However I have found a perfect configuration that I run during startup.
+
+```
+imwheel --kill --buttons "4 5"
+```
+
+I got this fix from [here](http://www.nicknorton.net/?q=node/10).
