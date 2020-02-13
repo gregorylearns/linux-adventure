@@ -8,6 +8,9 @@ Im making this retroactively seeing what improvements im making so that I can al
 
 UPDATE: Im thinking of moving to KDE or MATE during the 20.04 Release or when I get a new replacement SSD for my laptop.
 
+
+
+
 ## TLP
 
 I read somewhere in a thread where TLP is supposed to saves battery in linux.
@@ -29,6 +32,11 @@ $ sudo pip3 install termdown
 ## pyhostsman
 
 Not actually installed yet but im trying to make it work to distance myself from distraction during work hours.
+
+## OnlyOffice (Feb 2020)
+
+WPS Office is great. However there's this annoying bug that occurs when you close any WPS Office application and they persist in the memory. So now, I've taken on using OnlyOffice as my PDF reader. OnlyOffice isn't powerful enough, or isn't very close to MS Office in handling and UI as WPS. I'll keep using WPS for my editing needs and use OnlyOffice for the PDF Reading.
+
 
 ## WPS Office (Dec 2019)
 
