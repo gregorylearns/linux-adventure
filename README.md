@@ -9,6 +9,26 @@ Im making this retroactively seeing what improvements im making so that I can al
 UPDATE: Im thinking of moving to KDE or MATE during the 20.04 Release or when I get a new replacement SSD for my laptop.
 
 
+## Nativefier
+
+```
+npm install nativefier -g
+```
+
+### Todoist
+
+```
+nativefier --name TodoistWeb "https://www.todoist.com" --tray --single-instance
+```
+
+Then add to a shortcut Super + B
+
+
+## Add F4 to Nemo Open terminal
+
+https://forums.linuxmint.com/viewtopic.php?t=227702
+https://forums.linuxmint.com/viewtopic.php?f=47&t=225682
+
 
 
 ## TLP
