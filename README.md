@@ -20,13 +20,12 @@ rfkill block bluetooth
 inspired by this [thread](https://askubuntu.com/questions/67758/how-can-i-deactivate-bluetooth-on-system-startup).
 
 
-## Nativefier
+## Todoist for Linux
 
 ```
 npm install nativefier -g
 ```
 
-### Todoist
 
 ```
 nativefier --name TodoistWeb "https://www.todoist.com" --tray --single-instance
