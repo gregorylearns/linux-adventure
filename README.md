@@ -55,28 +55,66 @@ Table of Contents
 
 ## Distro Hopping
 
-I was first introduced to linux during highschool. Despite being around computers my whole life, and use one practically everyday, I've never heard of linux or open source software. My high school computer lab had been shipped with edubuntu and we were introduced to it. I was amazed. I was hooked on dual booting it. 
+I was first introduced to linux during highschool. Despite being around computers my whole life, and use one practically everyday, I've never heard of linux or open source software. My high school computer lab had been shipped with **Edubuntu** and we were introduced to it. I was amazed. I was hooked on dual booting it. 
+
+Sir Calunangan (RIP sir) introduced us to this great distribution. I thought it looked ugly. Joed and I were smug in the class using the only windows computer in the lab. We played Dota there at some point. 
 
 I can't remember much of it rn, but I remember doing an all nighter fixing my broken grub because the internet at school was fastest in the evening. 
 
-### It was probably Ubuntu 11.04 ?
+### Ubuntu 12.04 
+
+I remember tinkering with ubuntu 12.04 where I was not able to access my windows partition. I remember staying up all night and eventually sleeping with exhaustion and frustration that I couldn't make it work. 
+
+I remember during the final days of my Neo netbook, when the hinge on the monitor could not stand it. I had successfully dual booted it having a Naruto bijuu mode vs Ichigo bankai as my wallpaper in the Unity desktop.
+
+![Naruto image](/images/naruto-ichigo-wallpaper.jpg)
 
 
 ### Manjaro
 
+This was a dual boot from my first PC build. I didn't use it that much but only was a backup and to scratch an itch I had with linux.
 
-### Kubuntu was a dual boot, backup OS i had on my Vaio laptop
+![Manjaro2014](/images/manjaro_2014.jpg)
+
+### Kubuntu 16.04
+
+was a dual boot, backup OS i had on my Vaio laptop  
+I remember I didn't like using the interface but that dual boot installation sure saved my ass when I broke my windows setup that one night while cramming (and procrastinating)
+
+### PuppyLinux (Tahrpup)
+
+My hard drive broke that one time 3rd year college. I didn't have funds to buy a hard drive. So I used puppy linux in a CD so I could boot my laptop. Saved my files on my flash drive and the cloud. It was an alright time. I lived with it for a while. It was not that bad.
+
 
 ### Xubuntu 18.04
 
 UPDATE: Im thinking of moving to KDE or MATE during the 20.04 Release or when I get a new replacement SSD for my laptop.
+UPDATE2: Couldn't wait for that replacement SSD. I borked my installation by interrupting a system update while it was installing.
+Display broke (?)
 
 ### KDE Neon
 
+I'm a huge fan of the performance improvements of KDE (ram usage) and I really want to be part of the community that is passionate about it. But I don't think the DE is for me. I find the customization options too overwhelming. The icons and UI elements feel a bit hacked together? Or was missing a bit of polish and finesse? 
+
+I know I could tweak it further so that these negative stuff will be removed, but it seemed too daunting a task- I wanted to get into work.
+
+It's a shame, KDE would have been perfect for me and my need for a non-compositing WM for WINE Photoshop.
+
 ### Ubuntu Mate
+
+Went with MATE. I liked the customization but I didn't feel the UI was modern enough. 
 
 ### Linux Mint Cinnamon
 
+I tried cinnamon and immediately fell in love. Cinnamon was perfect for me and my use case
+
+A few weeks of usage however resulted in me finding out the bug that Cinnamon's WM had with WINE and photoshop. I considered it a bit of a dealbreaker.
+
+Now I'm eyeing GNOME and will probably install GNOME whenever I get the chance of fast internet so I can update my stuff.
+
+#### Budgie
+
+Budgie feels like Cinnamon. I like it. It solves the photoshop problem for me.
 
 ## Re-enable bluetooth
 
@@ -114,6 +152,10 @@ rfkill block bluetooth
 ```
 
 inspired by this [thread](https://askubuntu.com/questions/67758/how-can-i-deactivate-bluetooth-on-system-startup).
+
+## Plank
+
+I've taken a liking to the MacOS dock style.
 
 
 ## Todoist for Linux
