@@ -6,7 +6,103 @@ Along the way I went and did customizations, fixes, and overall enhancement to t
 
 Im making this retroactively seeing what improvements im making so that I can also replicate it if i ever decide to migrate to another distro or upgrade.(Im thinking of moving to linux mint cinnamon)
 
+
+
+Table of Contents
+=================
+
+   * [Linux-adventure](#linux-adventure)
+      * [Distro Hopping](#distro-hopping)
+         * [It was probably Ubuntu 11.04 ?](#it-was-probably-ubuntu-1104-)
+         * [Manjaro](#manjaro)
+         * [Kubuntu was a dual boot, backup OS i had on my Vaio laptop](#kubuntu-was-a-dual-boot-backup-os-i-had-on-my-vaio-laptop)
+         * [Xubuntu 18.04](#xubuntu-1804)
+         * [KDE Neon](#kde-neon)
+         * [Ubuntu Mate](#ubuntu-mate)
+         * [Linux Mint Cinnamon](#linux-mint-cinnamon)
+      * [Re-enable bluetooth](#re-enable-bluetooth)
+      * [Hide firefox Bookmarks toolbar and show only when url bar is clicked](#hide-firefox-bookmarks-toolbar-and-show-only-when-url-bar-is-clicked)
+      * [Disable Bluetooth on Startup](#disable-bluetooth-on-startup)
+      * [Todoist for Linux](#todoist-for-linux)
+      * [Add F4 to Nemo Open terminal](#add-f4-to-nemo-open-terminal)
+      * [TLP](#tlp)
+      * [Termdown](#termdown)
+      * [pyhostsman](#pyhostsman)
+      * [OnlyOffice (Feb 2020)](#onlyoffice-feb-2020)
+      * [WPS Office (Dec 2019)](#wps-office-dec-2019)
+      * [LibreOffice Addons](#libreoffice-addons)
+      * [Fixing slow copying speeds (Xubuntu)](#fixing-slow-copying-speeds-xubuntu)
+      * [Adobe Photoshop](#adobe-photoshop)
+      * [ANGRYSearch](#angrysearch)
+      * [SublimeText](#sublimetext)
+      * [XFCE Tiling](#xfce-tiling)
+      * [Linux MTP File Transfer](#linux-mtp-file-transfer)
+      * [Redshift GTK](#redshift-gtk)
+      * [Wifi speed fix](#wifi-speed-fix)
+      * [Flameshot](#flameshot)
+      * [Keyboard Shortcuts](#keyboard-shortcuts)
+      * [APT-SMART](#apt-smart)
+      * [Ghostwriter](#ghostwriter)
+      * [Mousescrolling fix](#mousescrolling-fix)
+
+
+
+
+
+
+
+
+
+## Distro Hopping
+
+I was first introduced to linux during highschool. Despite being around computers my whole life, and use one practically everyday, I've never heard of linux or open source software. My high school computer lab had been shipped with edubuntu and we were introduced to it. I was amazed. I was hooked on dual booting it. 
+
+I can't remember much of it rn, but I remember doing an all nighter fixing my broken grub because the internet at school was fastest in the evening. 
+
+### It was probably Ubuntu 11.04 ?
+
+
+### Manjaro
+
+
+### Kubuntu was a dual boot, backup OS i had on my Vaio laptop
+
+### Xubuntu 18.04
+
 UPDATE: Im thinking of moving to KDE or MATE during the 20.04 Release or when I get a new replacement SSD for my laptop.
+
+### KDE Neon
+
+### Ubuntu Mate
+
+### Linux Mint Cinnamon
+
+
+## Re-enable bluetooth
+
+So I've apparently soft-blocked my bluetooth and 
+```
+rfkill unblock bluetooth
+```
+does not work.
+
+From [askubuntu](https://askubuntu.com/questions/688090/cannot-unblock-soft-blocked-bluetooth)
+```
+rfkill unblock bluetooth
+systemctl enable bluetooth.service
+systemctl start bluetooth.service
+```
+It worked after this
+
+## Hide firefox Bookmarks toolbar and show only when url bar is clicked
+
+Tutorial from here
+https://superuser.com/questions/1283874/how-to-show-bookmarks-toolbar-only-on-new-tabs-in-firefox
+
+basically it's to add this line of code to your userChrome.css file
+```
+#nav-bar:not(:focus-within) + #PersonalToolbar:not(:hover):not(:focus-within):not([customizing]) { visibility: collapse; }
+```
 
 
 ## Disable Bluetooth on Startup
@@ -83,13 +179,15 @@ Although this looked like the familiar MS Office Ribbon UI, it still didn't do f
 ![Libreoffice wiht Notebookbar and Office2013 addons installed](/images/libreoffice-notebookbar-office2013icons.png)
 
 
-## Fixing slow copying speeds
+## Fixing slow copying speeds (Xubuntu)
 
 I read somewhere that PCManFM didn't have this problem vs. Thunar that XFCE is installed with. I found out that I liked PCManFM, but the problem still persisted. This fixed the problem.
 
 https://gist.github.com/2E0PGS/f63544f8abe69acc5caaa54f56efe52f
 
-## Photoshop CS6
+Linux Mint Cinnamon does not appear to have this problem.
+
+## Adobe Photoshop 
 
 Install the portable version through wine. Works surprisingly well.
 
