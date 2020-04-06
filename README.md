@@ -1,10 +1,10 @@
 # Linux-adventure
 
-After getting approved for my undergrad thesis, I went and used Xubuntu 18.04 full time; making it my daily driver. 
+After getting approved for my undergrad thesis, I had no need for my windows setup. So, I went and used Xubuntu 18.04 full time; making it my daily driver. 
 
 Along the way I went and did customizations, fixes, and overall enhancement to the OS that probably no clean install could be like this.
 
-Im making this retroactively seeing what improvements im making so that I can also replicate it if i ever decide to migrate to another distro or upgrade.(Im thinking of moving to linux mint cinnamon)
+I'm making this retroactively seeing what improvements im making so that I can also replicate it if i ever decide to migrate to another distro or upgrade.
 
 
 
@@ -12,38 +12,44 @@ Table of Contents
 =================
 
    * [Linux-adventure](#linux-adventure)
-      * [Distro Hopping](#distro-hopping)
-         * [It was probably Ubuntu 11.04 ?](#it-was-probably-ubuntu-1104-)
-         * [Manjaro](#manjaro)
-         * [Kubuntu was a dual boot, backup OS i had on my Vaio laptop](#kubuntu-was-a-dual-boot-backup-os-i-had-on-my-vaio-laptop)
-         * [Xubuntu 18.04](#xubuntu-1804)
-         * [KDE Neon](#kde-neon)
-         * [Ubuntu Mate](#ubuntu-mate)
-         * [Linux Mint Cinnamon](#linux-mint-cinnamon)
+   * [Table of Contents](#table-of-contents)
+   * [Distro Hopping](#distro-hopping)
+      * [Ubuntu 12.04](#ubuntu-1204)
+      * [Manjaro](#manjaro)
+      * [Kubuntu 16.04](#kubuntu-1604)
+      * [PuppyLinux (Tahrpup)](#puppylinux-tahrpup)
+      * [Xubuntu 18.04](#xubuntu-1804)
+      * [KDE Neon](#kde-neon)
+      * [Ubuntu Mate](#ubuntu-mate)
+      * [Linux Mint Cinnamon](#linux-mint-cinnamon)
+         * [Budgie](#budgie)
+   * [Fixes](#fixes)
       * [Re-enable bluetooth](#re-enable-bluetooth)
       * [Hide firefox Bookmarks toolbar and show only when url bar is clicked](#hide-firefox-bookmarks-toolbar-and-show-only-when-url-bar-is-clicked)
       * [Disable Bluetooth on Startup](#disable-bluetooth-on-startup)
-      * [Todoist for Linux](#todoist-for-linux)
       * [Add F4 to Nemo Open terminal](#add-f4-to-nemo-open-terminal)
+      * [Wifi speed fix](#wifi-speed-fix)
+      * [Mousescrolling fix](#mousescrolling-fix)
+      * [Fixing slow copying speeds (Xubuntu)](#fixing-slow-copying-speeds-xubuntu)
+   * [Packages](#packages)
+      * [Plank](#plank)
+      * [Todoist for Linux](#todoist-for-linux)
       * [TLP](#tlp)
       * [Termdown](#termdown)
       * [pyhostsman](#pyhostsman)
       * [OnlyOffice (Feb 2020)](#onlyoffice-feb-2020)
       * [WPS Office (Dec 2019)](#wps-office-dec-2019)
       * [LibreOffice Addons](#libreoffice-addons)
-      * [Fixing slow copying speeds (Xubuntu)](#fixing-slow-copying-speeds-xubuntu)
       * [Adobe Photoshop](#adobe-photoshop)
       * [ANGRYSearch](#angrysearch)
       * [SublimeText](#sublimetext)
       * [XFCE Tiling](#xfce-tiling)
       * [Linux MTP File Transfer](#linux-mtp-file-transfer)
       * [Redshift GTK](#redshift-gtk)
-      * [Wifi speed fix](#wifi-speed-fix)
       * [Flameshot](#flameshot)
       * [Keyboard Shortcuts](#keyboard-shortcuts)
       * [APT-SMART](#apt-smart)
       * [Ghostwriter](#ghostwriter)
-      * [Mousescrolling fix](#mousescrolling-fix)
 
 
 
@@ -51,9 +57,7 @@ Table of Contents
 
 
 
-
-
-## Distro Hopping
+# Distro Hopping
 
 I was first introduced to linux during highschool. Despite being around computers my whole life, and use one practically everyday, I've never heard of linux or open source software. My high school computer lab had been shipped with **Edubuntu** and we were introduced to it. I was amazed. I was hooked on dual booting it. 
 
@@ -61,7 +65,7 @@ Sir Calunangan (RIP sir) introduced us to this great distribution. I thought it 
 
 I can't remember much of it rn, but I remember doing an all nighter fixing my broken grub because the internet at school was fastest in the evening. 
 
-### Ubuntu 12.04 
+## Ubuntu 12.04 
 
 I remember tinkering with ubuntu 12.04 where I was not able to access my windows partition. I remember staying up all night and eventually sleeping with exhaustion and frustration that I couldn't make it work. 
 
@@ -70,29 +74,29 @@ I remember during the final days of my Neo netbook, when the hinge on the monito
 ![Naruto image](/images/naruto-ichigo-wallpaper.jpg)
 
 
-### Manjaro
+## Manjaro
 
 This was a dual boot from my first PC build. I didn't use it that much but only was a backup and to scratch an itch I had with linux.
 
 ![Manjaro2014](/images/manjaro_2014.jpg)
 
-### Kubuntu 16.04
+## Kubuntu 16.04
 
 was a dual boot, backup OS i had on my Vaio laptop  
 I remember I didn't like using the interface but that dual boot installation sure saved my ass when I broke my windows setup that one night while cramming (and procrastinating)
 
-### PuppyLinux (Tahrpup)
+## PuppyLinux (Tahrpup)
 
 My hard drive broke that one time 3rd year college. I didn't have funds to buy a hard drive. So I used puppy linux in a CD so I could boot my laptop. Saved my files on my flash drive and the cloud. It was an alright time. I lived with it for a while. It was not that bad.
 
 
-### Xubuntu 18.04
+## Xubuntu 18.04
 
 UPDATE: Im thinking of moving to KDE or MATE during the 20.04 Release or when I get a new replacement SSD for my laptop.
 UPDATE2: Couldn't wait for that replacement SSD. I borked my installation by interrupting a system update while it was installing.
 Display broke (?)
 
-### KDE Neon
+## KDE Neon
 
 I'm a huge fan of the performance improvements of KDE (ram usage) and I really want to be part of the community that is passionate about it. But I don't think the DE is for me. I find the customization options too overwhelming. The icons and UI elements feel a bit hacked together? Or was missing a bit of polish and finesse? 
 
@@ -100,11 +104,11 @@ I know I could tweak it further so that these negative stuff will be removed, bu
 
 It's a shame, KDE would have been perfect for me and my need for a non-compositing WM for WINE Photoshop.
 
-### Ubuntu Mate
+## Ubuntu Mate
 
 Went with MATE. I liked the customization but I didn't feel the UI was modern enough. 
 
-### Linux Mint Cinnamon
+## Linux Mint Cinnamon
 
 I tried cinnamon and immediately fell in love. Cinnamon was perfect for me and my use case
 
@@ -112,9 +116,11 @@ A few weeks of usage however resulted in me finding out the bug that Cinnamon's 
 
 Now I'm eyeing GNOME and will probably install GNOME whenever I get the chance of fast internet so I can update my stuff.
 
-#### Budgie
+### Budgie
 
 Budgie feels like Cinnamon. I like it. It solves the photoshop problem for me.
+
+# Fixes
 
 ## Re-enable bluetooth
 
@@ -153,6 +159,45 @@ rfkill block bluetooth
 
 inspired by this [thread](https://askubuntu.com/questions/67758/how-can-i-deactivate-bluetooth-on-system-startup).
 
+
+
+## Add F4 to Nemo Open terminal
+
+https://forums.linuxmint.com/viewtopic.php?t=227702
+https://forums.linuxmint.com/viewtopic.php?f=47&t=225682
+
+## Wifi speed fix
+Because im still dual booting my windows, I noticed that the wifi speed on my ubuntu was slower than the wifi speed on my windows. I found a fix online and applied it.
+
+https://ubuntuforums.org/showthread.php?t=2364068
+
+https://askubuntu.com/questions/830868/wifi-on-ubuntu-works-slower-than-wifi-on-windows-for-my-laptop
+
+https://askubuntu.com/questions/939050/dual-booting-ubuntu-windows-10-wifi-on-ubuntu-is-extremely-slow
+
+
+## Mousescrolling fix
+
+I was frustrated with the inability to fine tune mouse scrolling and I found a solution with a gui using zenity. However I have found a perfect configuration that I run during startup.
+
+```
+imwheel --kill --buttons "4 5"
+```
+
+I got this fix from [here](http://www.nicknorton.net/?q=node/10).
+
+## Fixing slow copying speeds (Xubuntu)
+
+I read somewhere that PCManFM didn't have this problem vs. Thunar that XFCE is installed with. I found out that I liked PCManFM, but the problem still persisted. This fixed the problem.
+
+https://gist.github.com/2E0PGS/f63544f8abe69acc5caaa54f56efe52f
+
+Linux Mint Cinnamon does not appear to have this problem.
+
+
+# Packages
+
+
 ## Plank
 
 I've taken a liking to the MacOS dock style.
@@ -170,13 +215,6 @@ nativefier --name TodoistWeb "https://www.todoist.com" --tray --single-instance
 ```
 
 Then add to a shortcut Super + B
-
-
-## Add F4 to Nemo Open terminal
-
-https://forums.linuxmint.com/viewtopic.php?t=227702
-https://forums.linuxmint.com/viewtopic.php?f=47&t=225682
-
 
 
 ## TLP
@@ -220,19 +258,9 @@ https://www.wps.com/en-PH/download/
 Although this looked like the familiar MS Office Ribbon UI, it still didn't do for me since most of my work revolves around getting MS Documents from my friends.
 ![Libreoffice wiht Notebookbar and Office2013 addons installed](/images/libreoffice-notebookbar-office2013icons.png)
 
-
-## Fixing slow copying speeds (Xubuntu)
-
-I read somewhere that PCManFM didn't have this problem vs. Thunar that XFCE is installed with. I found out that I liked PCManFM, but the problem still persisted. This fixed the problem.
-
-https://gist.github.com/2E0PGS/f63544f8abe69acc5caaa54f56efe52f
-
-Linux Mint Cinnamon does not appear to have this problem.
-
 ## Adobe Photoshop 
 
 Install the portable version through wine. Works surprisingly well.
-
 
 ## ANGRYSearch
 
@@ -246,7 +274,7 @@ Download Sublime through here: https://www.sublimetext.com/docs/3/linux_reposito
 
 ![From this reddit thread of tiling.](https://raw.githubusercontent.com/gregorylearns/linux-adventure/master/images/xfce_tile.PNG)
 
-Sorry I didn't upvote huhu.
+Sorry I didn't upvote(i think it was archived?).
 
 
 ## Linux MTP File Transfer
@@ -256,16 +284,6 @@ Not as seamless as it is in windows. I hate that it just doesnt work out of the 
 ## Redshift GTK
 
 I tried f.lux to work, but it doesn't. Redshift is very good and highly recommend.
-
-
-## Wifi speed fix
-Because im still dual booting my windows, I noticed that the wifi speed on my ubuntu was slower than the wifi speed on my windows. I found a fix online and applied it.
-
-https://ubuntuforums.org/showthread.php?t=2364068
-
-https://askubuntu.com/questions/830868/wifi-on-ubuntu-works-slower-than-wifi-on-windows-for-my-laptop
-
-https://askubuntu.com/questions/939050/dual-booting-ubuntu-windows-10-wifi-on-ubuntu-is-extremely-slow
 
 ## Flameshot
 
@@ -287,7 +305,7 @@ Super + W - Firefox
 
 Super + Z - Whisker Menu
 
-PrtSc - Flameshot 
+PrtSc - Flameshot (flameshot gui -p "path/to/dir")
 
 Alt + K,J,L,M,',','.',U,I,O - Tile Windows
 
@@ -305,13 +323,3 @@ Christmas Eve i'm having problem with updating a package using apt. Found out th
 
 Was looking for a writing package to write something distraction free. Turns out finding it was a distraction for myself to procrastinate in doing the thing I didnt want to do.
 
-
-## Mousescrolling fix
-
-I was frustrated with the inability to fine tune mouse scrolling and I found a solution with a gui using zenity. However I have found a perfect configuration that I run during startup.
-
-```
-imwheel --kill --buttons "4 5"
-```
-
-I got this fix from [here](http://www.nicknorton.net/?q=node/10).
