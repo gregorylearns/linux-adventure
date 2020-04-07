@@ -23,6 +23,9 @@ Table of Contents
       * [Ubuntu Mate](#ubuntu-mate)
       * [Linux Mint Cinnamon](#linux-mint-cinnamon)
          * [Budgie](#budgie)
+   * [Ricing](#Ricing)
+	  * [GTK Themes](#GTK Themes)
+	  * [Icons](#Icons)
    * [Fixes](#fixes)
       * [Re-enable bluetooth](#re-enable-bluetooth)
       * [Hide firefox Bookmarks toolbar and show only when url bar is clicked](#hide-firefox-bookmarks-toolbar-and-show-only-when-url-bar-is-clicked)
@@ -119,6 +122,22 @@ Now I'm eyeing GNOME and will probably install GNOME whenever I get the chance o
 ### Budgie
 
 Budgie feels like Cinnamon. I like it. It solves the photoshop problem for me.
+
+# Ricing
+
+## GTK Themes
+
+The GTK Themes that I like are
+
+Adwaita (and dark variants)
+Nord
+Adapta and Adapta-notko
+
+## Icons
+
+Papirus
+Vimix
+
 
 # Fixes
 
