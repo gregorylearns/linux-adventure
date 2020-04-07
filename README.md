@@ -19,6 +19,7 @@ Table of Contents
       * [Kubuntu 16.04](#kubuntu-1604)
       * [PuppyLinux (Tahrpup)](#puppylinux-tahrpup)
       * [Xubuntu 18.04](#xubuntu-1804)
+	     *[Regolith(i3)](#Regolith(i3))
       * [KDE Neon](#kde-neon)
       * [Ubuntu Mate](#ubuntu-mate)
       * [Linux Mint Cinnamon](#linux-mint-cinnamon)
@@ -98,6 +99,11 @@ My hard drive broke that one time 3rd year college. I didn't have funds to buy a
 UPDATE: Im thinking of moving to KDE or MATE during the 20.04 Release or when I get a new replacement SSD for my laptop.
 UPDATE2: Couldn't wait for that replacement SSD. I borked my installation by interrupting a system update while it was installing.
 Display broke (?)
+
+### Regolith(i3)
+
+I briefly tried i3. Wasn't for me.
+![Regolith](/images/regolith.png)
 
 ## KDE Neon
 
