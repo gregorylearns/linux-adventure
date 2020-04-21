@@ -8,26 +8,27 @@ I'm making this retroactively seeing what improvements im making so that I can a
 
 
 
+
 Table of Contents
 =================
 
    * [Linux-adventure](#linux-adventure)
-   * [Table of Contents](#table-of-contents)
    * [Distro Hopping](#distro-hopping)
       * [Ubuntu 12.04](#ubuntu-1204)
       * [Manjaro](#manjaro)
       * [Kubuntu 16.04](#kubuntu-1604)
       * [PuppyLinux (Tahrpup)](#puppylinux-tahrpup)
       * [Xubuntu 18.04](#xubuntu-1804)
-	     *[Regolith(i3)](#Regolith(i3))
+         * [Regolith(i3)](#regolithi3)
       * [KDE Neon](#kde-neon)
       * [Ubuntu Mate](#ubuntu-mate)
       * [Linux Mint Cinnamon](#linux-mint-cinnamon)
          * [Budgie](#budgie)
-   * [Ricing](#Ricing)
-	  * [GTK Themes](#GTK Themes)
-	  * [Icons](#Icons)
+   * [Ricing](#ricing)
+      * [GTK Themes](#gtk-themes)
+      * [Icons](#icons)
    * [Fixes](#fixes)
+      * [GNOME Wallpaper inconsistency](#gnome-wallpaper-inconsistency)
       * [Re-enable bluetooth](#re-enable-bluetooth)
       * [Hide firefox Bookmarks toolbar and show only when url bar is clicked](#hide-firefox-bookmarks-toolbar-and-show-only-when-url-bar-is-clicked)
       * [Disable Bluetooth on Startup](#disable-bluetooth-on-startup)
@@ -36,6 +37,9 @@ Table of Contents
       * [Mousescrolling fix](#mousescrolling-fix)
       * [Fixing slow copying speeds (Xubuntu)](#fixing-slow-copying-speeds-xubuntu)
    * [Packages](#packages)
+      * [Retroarch](#retroarch)
+         * [Lakka](#lakka)
+      * [Scrcpy](#scrcpy)
       * [Plank](#plank)
       * [Todoist for Linux](#todoist-for-linux)
       * [TLP](#tlp)
@@ -54,7 +58,6 @@ Table of Contents
       * [Keyboard Shortcuts](#keyboard-shortcuts)
       * [APT-SMART](#apt-smart)
       * [Ghostwriter](#ghostwriter)
-
 
 
 
@@ -147,6 +150,20 @@ Vimix
 
 # Fixes
 
+## GNOME Wallpaper inconsistency
+
+from this omgubuntu [post](https://www.omgubuntu.co.uk/2017/04/fix-gnome-wallpaper-inconsistency):
+
+>"See, whenever you drag an image file into the Picture overview of the GNOME Background settings pane GNOME stores a copy in ~/.cache/gnome-control-center/backgrounds/."
+
+>The “fix” is to replace the backgrounds folder in the cache folder with a symbolic link back to the wallpapers folder that GNOME settings ignores.
+
+```
+rm -r ~/.cache/gnome-control-center/backgrounds
+ln -s /path/to/wallpaper/directory ~/.cache/gnome-control-center/backgrounds
+
+```
+
 ## Re-enable bluetooth
 
 So I've apparently soft-blocked my bluetooth and 
@@ -185,7 +202,6 @@ rfkill block bluetooth
 inspired by this [thread](https://askubuntu.com/questions/67758/how-can-i-deactivate-bluetooth-on-system-startup).
 
 
-
 ## Add F4 to Nemo Open terminal
 
 https://forums.linuxmint.com/viewtopic.php?t=227702
@@ -221,6 +237,23 @@ Linux Mint Cinnamon does not appear to have this problem.
 
 
 # Packages
+
+## Retroarch
+
+I wanted to emulate mario kart
+
+### Lakka
+
+For a more-permanent tv attachment solution, i've employed lakka
+
+http://www.lakka.tv/
+
+
+## Scrcpy
+
+*Display and control your android device*
+
+I like it hehe
 
 
 ## Plank
