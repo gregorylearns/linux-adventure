@@ -132,6 +132,16 @@ Now I'm eyeing GNOME and will probably install GNOME whenever I get the chance o
 
 Budgie feels like Cinnamon. I like it. It solves the photoshop problem for me.
 
+## Moving Forward
+
+### KDE Neon
+
+I really want to like KDE Neon since it has a wonderful community, active development, and most importantly, very sleek system usage with ram usage comparable to XFCE. But I couldn't get into the default UI without giving up. I guess I'll try to use it for maybe a week and customize it to be similar to GNOME. 
+
+### Pop! OS 20.04
+
+I've been hearing great things about Pop! but im concerned about the memory usage. I like GNOME. Let's see where it will take me.
+
 # Ricing
 
 ## GTK Themes
@@ -149,6 +159,14 @@ Vimix
 
 
 # Fixes
+
+## Separate firefox profile for work
+
+add this in keyboard shortcuts
+`CTRL` + `Q`  `firefox -P grego-work`
+this starts firefox with a separate profile. Good for comparmentalizing your browsing experience.
+
+
 
 ## GNOME Wallpaper inconsistency
 
@@ -209,6 +227,21 @@ https://forums.linuxmint.com/viewtopic.php?f=47&t=225682
 
 ## Wifi speed fix
 Because im still dual booting my windows, I noticed that the wifi speed on my ubuntu was slower than the wifi speed on my windows. I found a fix online and applied it.
+
+```
+Create a .conf file for the "iwlwifi" driver that the kernel uses:
+
+    "sudo nano /etc/modprobe.d/iwlwifi.conf"
+
+Then set the 11n_disable parameter to 8
+
+    "options iwlwifi 11n_disable=8"
+    Save -> reboot.
+
+```
+https://www.reddit.com/r/archlinux/comments/677dzp/slow_intel_advancedn_6205_wifi_speed_fix/
+
+
 
 https://ubuntuforums.org/showthread.php?t=2364068
 
