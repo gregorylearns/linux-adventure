@@ -6,6 +6,10 @@ Along the way I went and did customizations, fixes, and overall enhancement to t
 
 I'm making this retroactively seeing what improvements im making so that I can also replicate it if i ever decide to migrate to another distro or upgrade.
 
+TODO:
+
+Turn Distro headers into a neat table
+
 
 
 
@@ -141,6 +145,129 @@ I really want to like KDE Neon since it has a wonderful community, active develo
 ### Pop! OS 20.04
 
 I've been hearing great things about Pop! but im concerned about the memory usage. I like GNOME. Let's see where it will take me.
+
+### 2021-2022 Update: 
+
+I went with KDE Neon for about a year. Now I'm on cinnamon.
+
+## Cinnamon Changes
+
+1. Keyboard Shortcuts
+
+Change `Ctrl + L` to lock
+Change `PrtSc` to `flameshot gui -p 'path/to/folder'`
+
+2. Startup Applications
+
+* Battery monitor for Low battery alerts 
+
+```bash
+#!/bin/bash
+
+# Script to send persistent notification on low battery events
+# Depends on zenity - apt install zenity
+# Save script in ~/bin or ~/.local/bin and make executable.
+# Add an entry to your startup applications.
+
+# This script will update Cinnamon's backend power settings to base low battery warnings and actions on
+# remaining battery percentage rather than time. It also updates the thresholds for the native notification 
+# and actions to those set in the variables listed below.
+
+# Low Battery Warning Level
+LOW_BAT=20
+
+# Critical Battery Warning Level
+CRIT_BAT=13
+
+# Critical Battery Action Level
+CRIT_BAT_ACTION=10
+
+# Main script starts here
+# Check for existing instances and kill them leaving current instance running
+for PID in $(pidof -o %PPID -x "${0##*/}"); do
+    if [ "$PID" != $$ ]; then
+        kill -9 "$PID"
+    fi 
+done
+#Find battery
+if upower -e | grep battery; then
+   BATTERY=$(upower -e | grep battery)
+else
+   echo "Error could not find battery"
+   exit 1
+fi
+
+# Update Gsettings
+gsettings set org.cinnamon.settings-daemon.plugins.power use-time-for-policy false
+gsettings set org.cinnamon.settings-daemon.plugins.power percentage-low "$LOW_BAT"
+gsettings set org.cinnamon.settings-daemon.plugins.power percentage-critical "$CRIT_BAT";
+gsettings set org.cinnamon.settings-daemon.plugins.power percentage-action "$CRIT_BAT_ACTION";
+
+# Get Critical Battery Action from Gsettings
+
+CRIT_ACTION=$(gsettings get org.cinnamon.settings-daemon.plugins.power critical-battery-action)
+if [ "$CRIT_ACTION" == "'suspend'" ] && busctl call org.freedesktop.login1 /org/freedesktop/login1 org.freedesktop.login1.Manager CanHybridSleep | grep yes && gsettings get org.cinnamon.SessionManager prefer-hybrid-sleep; then
+    CRIT_ACTION="'hybrid-sleep'"
+fi
+
+# Start loop
+while true; do
+STATE=$(upower -i "$BATTERY" | grep -E state|xargs|cut -d' ' -f2|sed s/%//)
+if [ "$STATE" != "discharging" ]; then
+    STATUS="OK"
+   sleep 1m
+   continue
+else
+   LEVEL=$(upower -i "$BATTERY" | grep -E percentage|xargs|cut -d' ' -f2|sed s/%//)
+   if [ "$LEVEL" -gt "$LOW_BAT" ]; then
+      STATUS="OK"
+      sleep 1m
+      continue
+   elif [ "$LEVEL" -le "$CRIT_BAT" ] && [ "$STATUS" != "Critical" ] ; then
+      zenity --warning --text="\nBattery Critically Low - $LEVEL% left.\n\nPlugin to AC as soon as possible.\n\nThe system will $CRIT_ACTION at $CRIT_BAT_ACTION%" --width=400
+      STATUS="Critical"
+      sleep 1m
+      continue
+   elif [ "$LEVEL" -le "$LOW_BAT" ] && [ "$STATUS" != "Low" ] && [ "$STATUS" != "Critical" ]; then
+                zenity --warning --text="\nBattery Low - $LEVEL% left.\n\nPlugin to AC.\n\nThe system will $CRIT_ACTION at $CRIT_BAT_ACTION%" --width=400
+      STATUS="Low"
+      sleep 1m
+      continue
+   fi
+fi
+sleep 1m
+done
+
+```
+
+3. Disable Bluetooth
+
+```bash
+rfkill block bluetooth
+```
+
+4. Start Syncthing
+
+```bash
+/usr/bin/syncthing serve --no-browser --logfile=default
+```
+
+## Extensions
+
+### Transparent Panels
+
+*Transparentize your panels when there are no any maximize windows*
+
+
+## Applets
+
+### Timer with Notifications
+
+## Fonts
+
+### Cantarell
+
+Apparently I like the default fedora gnome font Cantarell. it looks clean af. Ubuntu font is great too.
 
 # Ricing
 
